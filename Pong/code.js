@@ -1,11 +1,11 @@
-var leftscore = 0;
-var rightscore = 0;
-var ball;
-var leftpong;
-var rightpong;
-var canvas;
-var menu_but;
-var crafts;
+var leftscore = 0,
+    rightscore = 0,
+    ball,
+    leftpong,
+    rightpong,
+    canvas,
+    menu_but,
+    crafts;
 
 function setup() {
     canvas = createCanvas( window.innerWidth - 100, 400 );
@@ -46,6 +46,8 @@ function draw() {
     for( let i= 0; i< 22; i++) {
     rect((width/2)+5, i*20, 10, 10);
     }
+    rect( (width/2), 5, 640, 10);
+    rect( (width/2), height-5, 640, 10);
     textFont( computer_font );
     textAlign( RIGHT );
     textSize(34);
@@ -61,7 +63,6 @@ function keyReleased() {
 }
 
 function keyPressed() {
-    console.log(key);
     if (key == 'W') {
         leftpong.move(-10);
     } else if (key == 'S') {

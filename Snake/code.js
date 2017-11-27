@@ -25,7 +25,7 @@ function setup() {
   food = new Food();
   exfd = new ExtraFood();
   food.changePosition();
-  frameRate(15);
+  frameRate(10);
   crafts = [];
 	crafts[0] = new Craft( "../assets/menu/galaga_craft.png",     createVector( 0.15, 0.15 ), true );
 	crafts[1] = new Craft( "../assets/menu/spinvaders_craft.png", createVector( 3, 3 ),       false );
@@ -34,13 +34,13 @@ function setup() {
 function draw() {
 	background( 'black' );
   field();
-	scores();
   if( !game_over ){
     snk.eat( food );
   	snk.death();
   	snk.update();
   	snk.draw();
   	food.draw();
+  	scores();
   } else{
     againScreen()
     again_but.draw();
