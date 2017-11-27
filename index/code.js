@@ -13,7 +13,7 @@ function setup() {
 	buttons[2] = new Button( "Tetris", 400, 2, "../404/index.html" );
   buttons[3] = new Button( "PONG", 550, 1, "../Pong/index.html" );
   buttons[4] = new Button( "Breakout", 700, 0, "../Breakout/index.html" );
-  buttons[5] = new Button( "Pacman", 850, 1, "../Pacman/index.html" );
+  buttons[5] = new Button( "Pacman", 850, 1, "../pacman/index.html" );
   buttons[6] = new Button( "Asteroids", 1000, 2, "../Asteroids/index.html" );
 
 	crafts = [];
